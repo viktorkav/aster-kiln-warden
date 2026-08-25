@@ -61,14 +61,3 @@ node tests/smoke.mjs
 O **código** foi escrito por agentes de IA no MiniMax Code, com um agente por
 frente (motor, fase, revisão) trabalhando ao mesmo tempo no mesmo projeto, e um
 revisor cego auditando cada passe contra a `SPEC.md`.
-
-A **arte** é minha: o personagem, os cenários, os inimigos e o chefe saíram do
-mesmo material que eu já uso no canal. A máquina ficou com o código.
-
-Mega Man X é a régua declarada de sensação do jogo — não a fonte de nada dentro
-dele. Personagem, cenário, inimigos, chefe e trilha são originais.
-
-## Licença
-
-Sem licença aberta: todos os direitos reservados. O código está público como
-prova do que foi construído, e a arte não é reutilizável.
