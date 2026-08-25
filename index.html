@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0e1a" />
+  <title>Aster — Kiln Warden</title>
+  <style>
+    :root { color-scheme: dark; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      height: 100%;
+      background: #0a0e1a;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: monospace;
+    }
+    #wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    canvas#game {
+      width: 960px;   /* 480×270 lógico, escalado 2× (SPEC §1) */
+      height: 540px;
+      image-rendering: pixelated;
+      image-rendering: crisp-edges;
+      background: #9ad8ff;
+      border: 2px solid #1e3a5f;
+      box-shadow: 0 0 40px rgba(61, 111, 180, 0.45);
+      touch-action: none;
+    }
+    #controls {
+      color: #8fa8c8;
+      font-size: 13px;
+      text-align: center;
+      letter-spacing: 0.4px;
+      user-select: none;
+    }
+    #controls b { color: #cfe3ff; }
+    @media (max-width: 1000px) {
+      canvas#game { width: min(96vw, 960px); height: auto; aspect-ratio: 16/9; }
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <canvas id="game" width="480" height="270"></canvas>
+    <div id="controls">
+      <b>←→/AD</b> mover &nbsp;·&nbsp; <b>Z/Space</b> pular &nbsp;·&nbsp; <b>X/Shift</b> dash &nbsp;·&nbsp; <b>C/Ctrl</b> tiro (segure p/ charge) &nbsp;·&nbsp; <b>P</b> pause &nbsp;·&nbsp; <b>R</b> restart
+    </div>
+  </div>
+  <script type="module" src="./src/game.js"></script>
+</body>
+</html>
