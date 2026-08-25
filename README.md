@@ -42,9 +42,8 @@ src/engine.js       motor e física (player, colisão, câmera)
 src/level.js        fase, inimigos e chefe
 src/input.js        teclado, jump buffer, coyote time
 src/session.js      sessão e progresso
-assets/             sprites, tiles, fundo e paleta
-assets/source/      atlas de origem da arte
-tools/              extração dos sprite-sheets e servidor local
+assets/             sprites, tiles e fundo
+tools/servir.py     servidor local para desenvolvimento
 tests/              testes do motor, da fase e dos assets
 ```
 
